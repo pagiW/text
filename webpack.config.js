@@ -51,5 +51,12 @@ module.exports = {
             favicon: path.resolve(__dirname, 'public/Logo-Emprenti-pequeño.jpg'),
             template: path.resolve(__dirname, 'public/index.html')
         })
-    ]
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+            minSize: 0,
+            name: 'commons'
+        }
+    }
 }
