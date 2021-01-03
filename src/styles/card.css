@@ -1,0 +1,68 @@
+.card {
+    font-size: 24px;
+    border: 3px solid rgb(32, 194, 32);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.card h1 {
+    font-size: 16px;
+    text-align: start;
+}
+
+.card h2 {
+    font-size: 14px;
+    text-align: start;
+}
+
+.card button, .card-button {
+    width: 85%;
+    height: 25px;
+    border: 3px solid purple;
+    border-radius: 100px;
+    background-color: rgb(201, 20, 201);
+    cursor: pointer;
+    color: white;
+}
+
+.card-button {
+    width: 60%;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.modal-card {
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    border: 5px solid purple;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.x {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid purple;
+    color: purple;
+    position: relative;
+    right: 50%;
+    bottom: 25px;
+    cursor: pointer;
+}
