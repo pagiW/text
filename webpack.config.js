@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { DllReferencePlugin } = require('webpack');
 
 module.exports = {
     entry: {
@@ -50,13 +51,9 @@ module.exports = {
             title: 'Juan App',
             favicon: path.resolve(__dirname, 'public/Logo-Emprenti-pequeño.jpg'),
             template: path.resolve(__dirname, 'public/index.html')
+        }),
+        new DllReferencePlugin({
+            manifest: require('./modules-manifest.json')
         })
-    ],
-    optimization: {
-        splitChunks: {
-            chunks: 'all',
-            minSize: 0,
-            name: 'commons'
-        }
-    }
+    ]
 }
